@@ -1,0 +1,21 @@
+server:
+  port: 9092
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/everyonesparty/config-set.git
+          default-label: master
+          ignoreLocalSshSettings: true
+          username: rnjstjdgh
+          password: ${githupAccessToken} # vm option 으로 넘겨주기!
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
