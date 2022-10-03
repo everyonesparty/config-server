@@ -12,7 +12,7 @@ spring:
           default-label: master
           ignoreLocalSshSettings: true
           username: rnjstjdgh
-          password: ${githupAccessToken} # vm option 으로 넘겨주기!##
+          password: ${githupAccessToken} # vm option 으로 넘겨주기!
 
 management:
   endpoints:
