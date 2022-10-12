@@ -19,7 +19,7 @@ spring:
     config:
       server:
         git:
-          basedir: ./tmp/config
+#          basedir: ./tmp/config
           uri: https://github.com/everyonesparty/config-set.git
           default-label: master
           ignoreLocalSshSettings: true
