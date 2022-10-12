@@ -1,6 +1,17 @@
 server:
   port: 9092
 
+logging:
+  pattern:
+    file: "[%d{HH:mm:ss.SSS}][%-5level][%logger.%method:line%line] - %msg%n"
+    rolling-file-name: "./logs/config-server.%d{yyyy-MM-dd}.%i"
+  file:
+    name: ./logs/config-server.log
+    max-history: 3
+    level:
+      org:
+        springframework: INFO
+
 spring:
   application:
     name: config-service
